@@ -1,0 +1,15 @@
+<p>
+  <a href="/logout">Logout</a>
+</p>
+
+<p>ID: <%= user.id %></p>
+<p>Name: <%= user.displayName %></p>
+<p>Profile Page: <%= user.profileUrl %></p>
+<p>
+  Profile Picture:<br>
+  <% if (user.photos) { %>
+  <img src="<%= user.photos[0] %>">
+  <% } else { %>
+  Profile picture not exists.
+  <% } %>
+</p>
